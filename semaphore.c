@@ -37,5 +37,7 @@ void main(){
         }
         wait(NULL);
     }
+    sem_destroy(&mutex);
+    shmctl(shmid, IPC_RMID, NULL);
     exit(EXIT_SUCCESS);
 }
