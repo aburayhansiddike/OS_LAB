@@ -1,11 +1,8 @@
 #include<stdio.h>
 #include<unistd.h>
-#include<sys/wait.h>
 #include<stdlib.h>
-#include<string.h>
 
 void main(){
-
-    printf("Hi, this is another file\n");
+    execlp("/home/rayhan/Desktop/os_lab/test", "", NULL);
     exit(EXIT_SUCCESS);
 }
