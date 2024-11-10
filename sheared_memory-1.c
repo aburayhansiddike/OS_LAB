@@ -6,7 +6,7 @@
 
 void main(){
 
-    int shmid = shmget(121, 1024, 0666 | IPC_CREAT);
+    int shmid = shmget(121, 1024, 0777 | IPC_CREAT);
     int *x = shmat(shmid, 0, 0);
     *x = 10;
     sleep(10);
